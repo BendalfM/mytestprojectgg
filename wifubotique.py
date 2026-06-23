@@ -1,0 +1,3 @@
+p:=hello
+
+print('p')

@@ -21,7 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def waifu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
-        resp = requests.get("https://api.waifu.pics/nsfw/waifu")
+        resp = requests.get("https://api.waifu.pics/sfw/waifu")
         resp.raise_for_status()
         url = resp.json().get("url")
         if url:
